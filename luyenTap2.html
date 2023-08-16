@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập 2</title>
+</head>
+<body>
+<script>
+    // Bài 2: Viết một chương trình để in các ký tự trong một mảng theo thứ tự đảo ngược.
+    // Ví dụ, nếu một mảng chứa các ký tự  [ 'c', 's', 'c', '2', '6', '1' ] sau khi thực hiện đảo ngược sẽ là "162csc".
+    let kyTu = [ 'c', 's', 'c', '2', '6', '1' ];
+   // let daoNguoc = kyTu.reverse();
+   //  // console.log(daoNguoc);
+   //  let chuoi = daoNguoc.join('');
+   //  console.log(chuoi);
+
+
+    // Cách thứ 2 :
+    let mangChua = [];
+    for (let i = kyTu.length-1; i >= 0; i--) {
+        mangChua.push(kyTu[i]);
+    }
+        let chuoi = mangChua.join('');
+    console.log(chuoi);
+
+    // Đảo ngược mảng 2 chiều :
+    // let a = [
+    //     [1, 2, 1, 24],
+    //     [8, 11, 9, 4],
+    //     [7, 0, 7, 27],
+    //     [7, 4, 28, 14],
+    //     [3, 10, 26, 7]
+    // ];
+    //
+    // for (let i = 0; i < a.length ; i++) {
+    //     let daoNguoc = (a[i].reverse());
+    //     document.write(`${daoNguoc} <br>`);
+    // }
+
+
+
+
+
+    //Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
+    // Chương trình này đếm số ký tự số trong mảng.
+   //  let kyTu = ['h','5','q','16','87','p','S','N'];
+   //  let count = 0;
+   //  for (let i = 0; i < kyTu.length; i++) {
+   //      if (isNaN(kyTu[i]) === false) {
+   //          count++;
+   //      }
+   //  }
+   // document.write(`trong mảng trên có tất cả là ${count} ký tự số`);
+
+
+    // Bài 4: Viết một chương trình để đếm số từ trong một chuỗi
+    // let text = "chungToiLaChienSi";
+    // console.log(text.length);
+    //
+
+    // Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    // let chuoi1 = 'huan';
+    // let chuoi2 = 'hunm';
+    // if (chuoi1.length !== chuoi2.length) {
+    //     alert('Hai chuỗi khác nhau');
+    // } else {
+    //     let flag = false;
+    //     for (let i = 0; i < chuoi1.length; i++) {
+    //         if (chuoi1[i] !== chuoi2[i]) {
+    //             flag = true;
+    //             break;
+    //         }
+    //     }
+    //     if (flag === true) {
+    //         alert('Hai chuỗi khác nhau');
+    //     } else {
+    //         alert('Hai chuỗi giống nhau')
+    //     }
+    // }
+
+    // Bài 6: Viết chương trình nhập vào một mảng ký tự,
+    // tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+    // let names = ['-','h','g','m','='];
+    //
+    // for (let i = 0; i <names.length; i++) {
+    //     if (names[i] === '-') {
+    //        names[i] = '+';
+    //     }
+    // } console.log(names);
+
+
+
+    let str = "Toi-o-Hai-phong";
+    let arr = str.split('');
+    for (let i = 0; i < arr.length ; i++) {
+        if (arr[i] === '-') {
+            arr.splice(i , 1 , '+');
+        }
+    }
+    let str1 = arr.join('');
+    console.log(str1);
+
+</script>
+</body>
+</html>

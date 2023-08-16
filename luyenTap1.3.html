@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let numbers = [12,24,56,3,45,25,88,64,35,24,26,35,78,96,1,36,45];
+    let max = 0;
+    let tong = 0;
+    let index = -1;
+
+    for (let i = 0; i < numbers.length; i++) {
+        tong += numbers[i];
+        if (numbers[i] > max) {
+            max = numbers[i];
+            index = i;
+        }
+
+    }
+    let avg = tong/numbers.length;
+    alert(`Gía trị lón nhất trong mảng là ${max} nằm ở vị trí ${index} và giá trị trung bình của mảng là ${avg}`);
+</script>
+</body>
+</html>

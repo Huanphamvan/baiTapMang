@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    // let arr = [
+    //     [1,4,6],
+    //     [6,8,-1],
+    //     [3,5,7]
+    // ];
+
+    // for (let i = 0; i <arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length ; j++) {
+    //         console.log(`phần tử có hàng ${i} và cột ${j} có giá trị là ${arr[i][j]}`);
+    //     }
+    // }
+
+
+
+
+    // let max = arr[0][0];
+    // let index1 = -1;
+    // let index2 = -1;
+    // for (let i = 0; i <arr.length ; i++) {
+    //     for (let j = 0; j < arr[i].length ; j++) {
+    //        if (arr[i][j] > max) {
+    //            max = arr[i][j];
+    //            index1=i;
+    //            index2=j;
+    //        }
+    //     }
+    // } console.log(`phân tủ lớn nhất trong mảng là ${max} có vị trí là hàng${index1} và cột là ${index2}`);
+
+
+
+
+
+    // let a = [
+    //     [1,3,4],
+    //     [3,4,5],
+    //     [5,5,6]
+    // ];
+
+    // let tongchuoi = 0;
+    // for (let i = 0; i <a.length; i++) {
+    //     for (let j = 0; j <a[i].length ; j++) {
+    //         tongchuoi += a[i][j];
+    //     }
+    // }
+    // alert(`Tổng của tất cả các phần tử trong mảng là : ${tongchuoi}`);
+
+    // Bài 2 : tính tổng phần tử của từng hàng :
+
+    // for (let i = 0; i <a.length ; i++) {
+    //
+    //     let tongHang = 0;
+    //     for (let j = 0; j <a[i].length; j++) {
+    //         tongHang += a[i][j];
+    //
+    //     } document.write(`Tổng của hàng ${i} là : ${tongHang} <br>`);
+    // }
+
+
+
+    // Bài 3 : Tìm phần tử lớn nhất trong các hàng ;
+    // for (let i = 0; i <a.length ; i++) {
+    //     let maxHang = a[i][0];
+    //     for (let j = 0; j <a[i].length; j++) {
+    //         if (a[i][j] > maxHang) {
+    //             maxHang =a[i][j];
+    //         }
+    //
+    //     } document.write(`Max của hàng ${i} là : ${maxHang} <br>`);
+    // }
+    //
+
+
+
+    let b = [
+        [14,45,24,56,25],
+        [12,78,2,42,28],
+        [18,63,34,123,48],
+        [51,53,36,92,65],
+        [19,75,6,8,11],
+    ];
+
+    // Bài 6 : Hiển thị tổng các phần tử của từng cột :
+    // let tong = 0;
+    // for (let i = 0; i <b.length; i++) {
+    //     let tongCot = 0;
+    //     for (let j = 0; j < b[i].length ; j++) {
+    //         tongCot += b[j][i];
+    //     }
+    //         document.write(`Tổng cột ${i} là ${tongCot} <br>`);
+    // }
+
+
+
+    // Bài 7 : Hiển thị phần tử lớn nhất của từng cột:
+
+    // for (let i = 0; i <b.length; i++) {
+    //     let maxCot = b[0][i];
+    //     for (let j = 0; j <b[i].length ; j++) {
+    //         if (b[j][i] > maxCot) {
+    //             maxCot = b[j][i];
+    //         }
+    //     }
+    //     document.write(`Phần tử lớn nhất cột ${i} là ${maxCot} <br>`);
+    // }
+
+
+    // Bài 8 : Tìm Max đường chéo chính của ma trận :
+    //  let duongCheoChinh = 0;
+    // for (let i = 0; i < b.length ; i++) {
+    //     duongCheoChinh += b[i][i];
+    //
+    // }
+    // console.log(duongCheoChinh);
+
+
+    // Bài 9 : tính đường chéo phụ :
+    let duongCheoPhu = 0;
+    for (let i = 0; i < b.length ; i++) {
+        duongCheoPhu += b[i][b.length-1-i];
+    }
+        alert(duongCheoPhu);
+
+
+</script>
+</body>
+</html>

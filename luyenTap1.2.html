@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let numbers = [12,5,78,25,34,69,52,47,56,32];
+    let max = numbers[0];
+    let index = -1;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+            index = i;
+            // alert(`Phần tử lớn nhất trong dãy là ${max} nằm ở vị trí ${i}`);
+        }
+    }
+    alert(`Phần tử lớn nhất trong dãy là ${max} nằm ở vị trí ${index}`);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let V = +prompt('Xin vui lòng nhập vào số V:');
+    let numbers = [12,25,15,35,68,45,26,78,69,25,74,21,65,89];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === V) {
+            alert(`Số ${V} có tồn tại trong mảng và nằm ở vị trí ${i}`);
+            numbers.splice(i,1);
+        }
+    } console.log(numbers);
+
+
+</script>
+</body>
+</html>

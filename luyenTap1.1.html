@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+
+<script>
+    // let numbers = [1,56,42,5,3,8,45,12,59,42];
+    // let count = 0;
+    // for (let i = 0; i < numbers.length ; i++) {
+    //     if (numbers[i] >= 10) {
+    //         count++;
+    //     }
+    // } alert(`Mảng đã cho có ${count} phần tử lớn hơn hoặc bằng 10`);
+
+
+    // Tính tổng số lớn hơn bằng 10 và in ra:
+
+
+    let numbers = [1,56,42,5,3,8,45,12,59,42];
+    let count = 0;
+    let sum = 0;
+    for (let i = 0; i < numbers.length ; i++) {
+        if (numbers[i] >= 10) {
+            console.log(`phần tử thứ ${i} lớn hơn bằng 10 có giá trị là ${numbers[i]}`);
+            count++;
+            sum += numbers[i];
+        }
+    } alert(`Mảng đã cho có ${count} phần tử lớn hơn hoặc bằng 10 và tổng số bằng = ${sum}` );
+
+</script>
+</body>
+</html>
